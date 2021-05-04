@@ -1,7 +1,7 @@
 /* eslint-disable */
 import * as components from "./components";
 
-const install = (Vue = {}, options = {}) => {
+const install = (Vue = {}) => {
   Object.entries(components).forEach(([componentName, component]) => {
     Vue.component(component.name, component);
   });

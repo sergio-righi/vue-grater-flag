@@ -9,18 +9,17 @@ If you are using module bundlers such as Webpack, you can directly include packa
 NPM:
 
 ```bash
-$ npm install grater-vue --save
+$ npm install grater-flag-vue --save
 ```
 
-Then register `grater-vue` components and directives all at once in your app's entry:
+Then register `grater-flag-vue` components and directives all at once in your app's entry:
 
 ```js
-// plugins/grater-vue.js
+// plugins/grater-flag-vue.js
 import Vue from "vue";
-import * as GraterVue from "grater-vue/dist/grater-vue.umd.min";
-import "grater-vue/dist/grater-vue.css";
+import * as GraterFlagVue from "grater-vue/dist/grater-flag-vue.umd.min";
 
-Vue.use(GraterVue);
+Vue.use(GraterFlagVue);
 ```
 
 ### Disclaimer
