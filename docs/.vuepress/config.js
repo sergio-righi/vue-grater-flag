@@ -2,7 +2,7 @@ const { resolve } = require("path");
 
 module.exports = {
   base: "/",
-  title: "Grater Flag Vue",
+  title: "Grater Vue Flag",
   description: "Just playing around",
   markdown: {
     lineNumbers: true,
@@ -36,7 +36,7 @@ module.exports = {
       alias: {
         "@": resolve(__dirname, "../../src"),
         flag: resolve(__dirname, "../../public/flag"),
-        "grater-flag-vue": resolve(__dirname, "../../src"),
+        "grater-vue-flag": resolve(__dirname, "../../src"),
       },
     },
   },

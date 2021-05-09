@@ -1,6 +1,6 @@
 {
-  "name": "grater-flag-vue",
-  "version": "0.0.2-pre-alpha",
+  "name": "grater-vue-flag",
+  "version": "0.0.1-pre-alpha",
   "author": "Sérgio Righi",
   "email": "sergiohrighi@gmail.com",
   "description": "Just playing around",
@@ -19,9 +19,9 @@
     "docs:build": "vuepress build docs",
     "docs:dev": "vuepress dev docs"
   },
-  "main": "dist/grater-flag-vue.umd.js",
-  "module": "dist/grater-flag-vue.esm.js",
-  "unpkg": "dist/grater-flag-vue.min.js",
+  "main": "dist/grater-vue-flag.umd.js",
+  "module": "dist/grater-vue-flag.esm.js",
+  "unpkg": "dist/grater-vue-flag.min.js",
   "files": [
     "src",
     "dist"
