@@ -15,4 +15,3 @@ The default example of the component.
 | Name  |  Type  | Description                   | Default | Required |
 | ----- | :----: | ----------------------------- | ------- | -------- |
 | value | string | name of the country or locale | null    | true     |
-| width | string | set `width` style property    | null    | false    |
