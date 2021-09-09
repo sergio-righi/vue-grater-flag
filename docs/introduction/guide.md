@@ -4,25 +4,255 @@ A short guide to get started using the library.
 
 ## Install
 
-If you are using module bundlers such as Webpack, you can directly include package into your project via:
+If you are using module bundlers such as Webpack,
+you can directly include package into your project via:
 
 NPM:
 
 ```bash
-$ npm install grater-vue --save
+$ npm install grater-vue-flag --save
 ```
 
-Then register `grater-vue` components and directives all at once in your app's entry:
+Then register `grater-vue-flag` components and directives all at once in your app's entry:
 
 ```js
-// plugins/grater-vue.js
+// plugins/grater-vue-flag.js
 import Vue from "vue";
-import * as GraterVue from "grater-vue/dist/grater-vue.umd.min";
-import "grater-vue/dist/grater-vue.css";
+import * as GraterVueFlag from "grater-vue/dist/grater-vue-flag.umd.min";
 
-Vue.use(GraterVue);
+Vue.use(GraterVueFlag);
+```
+
+## Usage
+
+```html
+<!-- by hyphenated country names -->
+<g-flag value="south-korea" />
+<!-- by locale -->
+<g-flag value="ko-KR" />
+<!-- by country name -->
+<g-flag value="South Korea" />
+```
+
+## Flags
+
+The library currently makes available the following countries:
+
+```json
+{
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Andorra",
+    "Angola",
+    "Antigua and Barbuda",
+    "Argentina",
+    "Armenian,Armenia",
+    "Aruba",
+    "Australia",
+    "Austria",
+    "Azerbaijan",
+    "Bahamas",
+    "Bahrain",
+    "Bangladesh",
+    "Barbados",
+    "Belarus",
+    "Belgium",
+    "Belize",
+    "Benin",
+    "Bhutan",
+    "Bolivia",
+    "Bonaire",
+    "Bosnia and Herzegovina",
+    "Botswana",
+    "Brazil",
+    "Brunei",
+    "Bulgaria",
+    "Burkina Faso",
+    "Burundi",
+    "Cambodia",
+    "Cameroon",
+    "Canada",
+    "Cape Verde",
+    "Central African Republic",
+    "Chile",
+    "China",
+    "Colombia",
+    "Comoros",
+    "Democratic Republic of the Congo",
+    "Republic of the Congo",
+    "Costa Rica",
+    "Ivory Coast",
+    "Coatia",
+    "Cuba",
+    "Curacao",
+    "Cyprus",
+    "Czechia",
+    "Denmark",
+    "Djibouti",
+    "Dominica",
+    "Dominican Republic",
+    "East Timor",
+    "Ecuador",
+    "Egypt",
+    "England",
+    "Equatorial Guinea",
+    "Eritrea",
+    "Estonia",
+    "Ethiopia",
+    "Faroe Islands",
+    "Fiji",
+    "Finland",
+    "France",
+    "Gabon",
+    "Gambia",
+    "Georgia",
+    "Germany",
+    "Ghana",
+    "Greece",
+    "Greenland",
+    "Guadeloupe",
+    "Guam",
+    "Guatemala",
+    "Guinea Bissau",
+    "Guinea",
+    "Guyana",
+    "Haiti",
+    "Honduras",
+    "Hong Kong",
+    "Hungary",
+    "Iceland",
+    "India",
+    "Indonesia",
+    "Iran",
+    "Iraq",
+    "Ireland",
+    "Israel",
+    "Italy",
+    "Jamaica",
+    "Japan",
+    "Jordan",
+    "Kazakhstan",
+    "Kenya",
+    "Kiribati",
+    "Kosovo",
+    "Kuwait",
+    "Kyrgyzstan",
+    "Laos",
+    "Latvia",
+    "Lebanon",
+    "Lesotho",
+    "Liberia",
+    "Libya",
+    "Liechtenstein",
+    "Lithuania",
+    "Luxembourg",
+    "Macau",
+    "Macedonia",
+    "Madagascar",
+    "Malawi",
+    "Malaysia",
+    "Maldives",
+    "Mali",
+    "Malta",
+    "Marshall Islands",
+    "Mauritania",
+    "Mexico",
+    "Micronesia",
+    "Moldova",
+    "Monaco",
+    "Mongolia",
+    "Montenegro",
+    "Morocco",
+    "Mozambique",
+    "Myanmar",
+    "Namibia",
+    "Nauru",
+    "Nepal",
+    "Netherlands",
+    "New Caledonia",
+    "New Zealand",
+    "Nicaragua",
+    "Niger",
+    "Nigeria",
+    "Niue",
+    "North Korea",
+    "Northern Ireland",
+    "Norway",
+    "Oman",
+    "Pakistan",
+    "Palau",
+    "Plestina",
+    "Panama",
+    "Paraguay",
+    "Peru",
+    "Philippines",
+    "Poland",
+    "Portugal",
+    "Puerto Rico",
+    "Qatar",
+    "Romania",
+    "Russia",
+    "Rwanda",
+    "Saba",
+    "Saint Eustatius",
+    "Saint Lucia",
+    "Saint Martin",
+    "Saint Vincent and the Grenadines",
+    "Samoa",
+    "San Marino",
+    "Sao Tome and Principe",
+    "Saudi Arabia",
+    "Scotland",
+    "Senegal",
+    "Serbia",
+    "Seychelles",
+    "Sierra Leone",
+    "Singapore",
+    "Slovakia",
+    "Slovenia",
+    "Solomon Islands",
+    "Somalia",
+    "South Africa",
+    "South Korea",
+    "Spain",
+    "Sri Lanka",
+    "Sudan",
+    "Suriname",
+    "Swaziland",
+    "Sweden",
+    "Switzerland",
+    "Syria",
+    "Taiwan",
+    "Tajikistan",
+    "Tanzania",
+    "Thailand",
+    "Togo",
+    "Tonga",
+    "Trinidad and Tobago",
+    "Tunisia",
+    "Turkey",
+    "Turkmenistan",
+    "Tuvalu",
+    "Uganda",
+    "Ukraine",
+    "United Arab Emirates",
+    "United Kingdom",
+    "United States of America",
+    "Uruguay",
+    "Uzbekistan",
+    "Vanuatu",
+    "Vatican City",
+    "Venezuela",
+    "Vietnam",
+    "Wales",
+    "Yemen",
+    "Zambia",
+    "Zimbabwe"
+}
 ```
 
 ## Disclaimer
 
-This library is currently __under development__ and features are constantily being added, be aware that issues might happen.
+The library is currently under development and issues may occur,
+be aware of it and stay updated to get the latest version.
