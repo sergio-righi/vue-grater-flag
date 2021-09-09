@@ -40,6 +40,7 @@ The library currently makes available the following countries:
 
 ```json
 {
+  "countries": [
     "Afghanistan",
     "Albania",
     "Algeria",
@@ -249,6 +250,7 @@ The library currently makes available the following countries:
     "Yemen",
     "Zambia",
     "Zimbabwe"
+  ]
 }
 ```
 
