@@ -36,9 +36,6 @@ export default {
       return item ? item.src : null;
     }
   },
-  mounted() {
-    console.log(countries.map(item => `"${item.name}"`).join(", "));
-  },
   methods: {
     normalize(value) {
       if (!value) return;
